@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FORMULIR PENDAFTARAN</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <form action="pehape.php" method="POST">
+    <fieldset class="infopendaftaran">
+      <legend>
+        <h3>FORMULIR PENDAFTARAN MAHASISWA BARU </h3>
+      </legend>
+
+      <h4>INFO PENDAFTARAN</h4>
+
+
+      <div class="infodftr"></div>
+
+      <label>NISN</label><br>
+      <input type="number" name="nisn">
+      <br>
+      <br>
+      <label>Asal Sekolah</label><br>
+      <input type="type" name="asalsekolah">
+      <br>
+      <br>
+      <label>Tahun Lulus</label><br>
+      <input type="number" name="thnlulus"><br>
+      <br>
+      <label><em>Lampirkan Fotocopy Ijazah</em></label><br>
+      <input type="file" value="upload gambar" name="ijazah"><br>
+
+      </div>
+      </table>
+
+      <h4>DATA CALON PESERTA</h4>
+
+      <table>
+        <div class="infodftr"></div>
+
+        <label>Nama Lengkap</label><br>
+        <input type="type" name="namalengkap" style="width: 300px; height: 20px">
+        <br>
+        <br>
+
+        <label>NIK</label><br>
+        <input type="number" name="nik">
+        <br>
+        <br>
+
+
+        <label>Tempat Lahir</label><br>
+        <input type="type" name="tmptlahir">
+        <br>
+        <br>
+
+        <div class="tanggallahir">
+
+          <label>Tanggal Lahir</label><br>
+          <input type="date" name="tanglir">
+          <br>
+          <br>
+          <label>Umur</label><br>
+          <input type="number" name="umur">
+          <br>
+          <br>
+          <label>Tahun</label><br>
+          <input type="number" name="tahun">
+          <br>
+          <br>
+
+        </div>
+
+        <label><em>Lampirkan Akta Kelahiran Yang Telah Dilegalisir</em></label><br>
+        <input type="file" value="upload gambar" name="akte"><br>
+        <br>
+
+        <label>Jenis Kelamin</label><br>
+        <select id="gender" name="gender">
+          <option value="laki">Laki-Laki</option>
+          <option value="perempuan">Perempuan</option>
+        </select>
+        <br>
+        <br>
+        <label>Alamat</label><br>
+        <input type="type" name="alamat">
+
+        <div class="tambahan">
+          <label>Desa/Kel</label><br>
+          <input type="type" name="deskel"><br>
+
+          <label>Kecamatan</label><br>
+          <input type="type" name="kel"><br>
+
+          <label>Kabupaten</label><br>
+          <input type="type" name="kabupaten"><br>
+
+          <label>Provinsi</label><br>
+          <input type="type" name="provinsi"><br>
+        </div>
+
+        <label>Email Aktif</label><br>
+        <input type="email" name="email"><br>
+
+        </div>
+      </table>
+
+      <h4>DATA ORANG TUA</h4>
+
+      <table>
+        <div class="infodftr"></div>
+
+        <label>Nomor Kartu Keluarga</label><br>
+        <input type="number" name="nokk">
+        <br>
+        <br>
+        <label><em>Lampirkan Kartu Keluarga</em></label><br>
+        <input type="file" value="upload gambar" name="kaka"><br>
+        <br>
+        <label>Nama Ayah Kandung</label><br>
+        <input type="type" name="namaayah" style="width: 300px; height: 20px">
+        <br>
+        <br>
+
+        <label>Agama</label><br>
+        <select id="agamaayah" name="agamaayah">
+          <option value="islam">Islam</option>
+          <option value="katolik">Katolik</option>
+          <option value="kristen">Kristen</option>
+          <option value="hindu">Hindu</option <option value="budha">Budha</option>
+          <option value="khonghucu">Khong Hu Cu</option>
+        </select>
+        <br>
+        <br>
+        <label>Pekerjaan</label><br>
+        <input type="type" name="pekerjaan">
+        <br>
+        <br>
+
+        <label>Nama Ibu Kandung</label><br>
+        <input type="type" name="namaibu" style="width: 300px; height: 20px">
+        <br>
+        <br>
+
+        <label>Agama</label><br>
+        <select id="agamaibu" name="agamaibu">
+          <option value="islam">Islam</option>
+          <option value="katolik">Katolik</option>
+          <option value="kristen">Kristen</option>
+          <option value="hindu">Hindu</option <option value="budha">Budha</option>
+          <option value="khonghucu">Khong Hu Cu</option>
+        </select>
+        <br>
+        <br>
+
+        <label>Pekerjaan</label><br>
+        <input type="type" name="pekerjaanibu">
+        <br>
+        <br>
+
+        <label>Alamat Orang Tua</label><br>
+        <input type="type" name="almtortu">
+
+
+        <div class="tambahan">
+          <label>Desa/Kel</label><br>
+          <input type="type" name="deskel"><br>
+
+          <label>Kecamatan</label><br>
+          <input type="type" name="kel"><br>
+
+          <label>Kabupaten</label><br>
+          <input type="type" name="kabupaten"><br>
+
+          <label>Provinsi</label><br>
+          <input type="type" name="provinsi"><br>
+        </div>
+
+        <input type="submit" value="Kirim">
+
+        </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>

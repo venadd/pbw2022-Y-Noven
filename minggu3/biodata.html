@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <title>BIODATA</title>
+    <link rel="stylesheet" href="program.css" />
+  </head>
+
+  <body>
+    <h1>
+      <center>BIODATA</center>
+    </h1>
+    <div class="utama">
+      <div class="gambar">
+        <img src="images.jpg" width="150px" height="150px" />
+      </div>
+
+      <hr width="50%" />
+
+      <div class="tabel">
+        <center>
+          <table class="tabeldlm1">
+            <tr>
+              <td>Nama</td>
+              <td>: Y Noven Dhimas Nugroho</td>
+            </tr>
+            <tr>
+              <td>NIM</td>
+              <td>: A11.2022.14045</td>
+            </tr>
+            <tr>
+              <td>Dosen Wali</td>
+              <td>: Chaerul Umam, M.Kom</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td>: Mahasiswa</td>
+            </tr>
+            <tr>
+              <td>Alamat Semarang</td>
+              <td>: Jl Panji, RT 05, RW 02</td>
+            </tr>
+            <tr>
+              <td>Alamat Asal</td>
+              <td>: Jl Panji, RT 05, RW 02</td>
+            </tr>
+            <tr>
+              <td>No Hp</td>
+              <td>: 082135941959</td>
+            </tr>
+            <tr>
+              <td>E-Mail</td>
+              <td>: novndms10@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Agama</td>
+              <td>: Katolik</td>
+            </tr>
+          </table>
+        </center>
+      </div>
+    </div>
+
+    <h2>
+      <center>JADWAL KRS</center>
+    </h2>
+    <div class="tabel2">
+      <center>
+        <table class="tabeldlm" border="1" cellspacing="0" cellpadding="5">
+          <tr class="kesatu">
+            <td>No</td>
+            <td>Mata Kuliah</td>
+            <td>Kelompok</td>
+            <td>Ruang</td>
+            <td>SKS</td>
+          </tr>
+          <tr class="kedua">
+            <td>1</td>
+            <td>Kalkulus 1</td>
+            <td>A11.4102</td>
+            <td>H.3.9</td>
+            <td>4</td>
+          </tr>
+          <tr class="ketiga">
+            <td>2</td>
+            <td>Dasar Pemograman</td>
+            <td>A11.4102</td>
+            <td>D.2.G</td>
+            <td>4</td>
+          </tr>
+          <tr class="keempat">
+            <td>3</td>
+            <td>Matematika Diskrit</td>
+            <td>A11.4102</td>
+            <td>H.4.4</td>
+            <td>3</td>
+          </tr>
+          <tr class="kelima">
+            <td>4</td>
+            <td>Pemograman Berbasis Web</td>
+            <td>A11.4102</td>
+            <td>D.3.M</td>
+            <td>2</td>
+          </tr>
+          <tr class="keenam">
+            <td>5</td>
+            <td>Organisasi Dan Arsitektur Komputer</td>
+            <td>A11.4102</td>
+            <td>H.4.6</td>
+            <td>3</td>
+          </tr>
+          <tr class="ketujuh">
+            <td>6</td>
+            <td>Dasar Dasar Komputasi</td>
+            <td>A11.4102</td>
+            <td>D.2.J</td>
+            <td>2</td>
+          </tr>
+        </table>
+      </center>
+    </div>
+
+    <center>
+      <div class="minggudua">
+        <h1>VIDEO LIBRARY</h1>
+        <video id="myvideo" width="720" height="420" controls>
+          <source src="KOLD - My Year 2016.mp4" type="video/mp4" />
+        </video>
+        <div class="tombol">
+          <button onclick="playvid ()" type="button">Play Video</button>
+          <button onclick="pausevid ()" type="button">Pause Video</button>
+          <button onclick="myfungction ()" type="button">Durasi</button>
+        </div>
+
+        <h1>AUDIO LIBRARY</h1>
+        <audio controls>
+          <source src="Gryffin - Just For A Moment ft. Iselin.mp3" type="audio/mpeg" />
+        </audio>
+
+        <h1>HTML PLUGIN</h1>
+        <object width="100%" height="250px" data="hello.html"></object>
+        <embed src="download.png" />
+
+        <h1>HTML YOUTUBE</h1>
+        <iframe
+          width="720"
+          height="420"
+          src="https://www.youtube.com/embed/8crJj62DWDE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; 
+  encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </center>
+  </body>
+
+  <script>
+    var vid = document.getElementById("myvideo");
+    function playvid() {
+      vid.play();
+    }
+    function pausevid() {
+      vid.pause();
+    }
+    function myfungction() {
+      alert(vid.duration);
+    }
+  </script>
+</html>
