@@ -1,0 +1,60 @@
+body {
+    background: #006ba9fc;
+    font-family: Times New Roman;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+.tengah {
+    margin: 10px auto;
+    width: 1150px;
+}
+
+.persegi {
+    background: #fcfcfc;
+    padding: 20px;
+    width: 200px;
+    float: left;
+    margin: 20px;
+    height: 200px;
+}
+
+.persegi1 {
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+.persegi2 {
+    border-radius: 40px 20px 60px 90px;
+}
+
+.perseg2 {
+    border-radius: 2px 140px 20px 60px;
+}
+
+.persegi3 {
+    border-radius: 20px 10px 80px 10px;
+}
+
+.persegi4 {
+    border-radius: 0px 50px 0px 50px;
+}
+
+.persegi5 {
+    border-radius: 0px 0px 0px 0px;
+}
+
+.persegi6 {
+    border-radius: 100%;
+}
+
+.persegi7 {
+    border-radius: 40px 10px;
+}
+
+.persegi8 {
+    border-radius: 10px 10px 50% 50%;
+}
