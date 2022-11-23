@@ -1,0 +1,1 @@
+alert("Halo, Ini adalah conoth program Javascript eksternal")
