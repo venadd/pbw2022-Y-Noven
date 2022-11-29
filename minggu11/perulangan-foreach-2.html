@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan Foreach</title>
+</head>
+<body>
+    <script>
+        var hari = ["senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu"];
+        hari.forEach(function(day){
+            document.write("<p>" + day + "</p>");
+        });
+
+        //arrow function
+        hari.forEach((hari) => {
+            document.write("<P>"+ hari + "</P>")
+        });
+    </script>
+</body>
+</html>
