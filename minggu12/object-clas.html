@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObjectClass</title>
+</head>
+<body>
+    <script> 
+        function Person(firstName, lastName){ 
+
+            this.depan = firstName; 
+            this.belakang = lastName; 
+ 
+            this.fullName = function(){ 
+                return `${this.depan} ${this.belakang}` 
+            } 
+            this.showName = function(){ 
+                document.write(this.fullName()); 
+            } 
+        } 
+ 
+        var orang = new Person("bagas", "saontolot"); 
+        var orangg = new Person("Belajar", "memasakk"); 
+ 
+        orang.showName(); 
+        document.write("<br>"); 
+        orangg.showName(); 
+    </script>
+</body>
+</html>
