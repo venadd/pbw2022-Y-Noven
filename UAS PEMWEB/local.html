@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Sepatu, sepatu murah, sepatu terbaik, brand sepatu terkenal">
+    <meta name="author" content="Y Noven">
+    <meta name="description" content="Website Toko Sepatu Online">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" sizes="96x96" href="/imghome/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Promo</title>
+</head>
+
+<body>
+    <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Keranjang Belanja</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+                        <h6>Jika sudah memasukkan ke keranjang belanja wajib untuk screenshoot halaman ini!!</h6>
+                    </table>
+                    <div>Total Harga: Rp<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <div class="pesan">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END EDMO HTML (Happy Coding!)-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-4" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Pesanan</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container">
+                    <div class="col-lg-6 col-lg-offset-3 col-xl-12">
+                        <div class="panel panel-success">
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label>Nama</label>
+                                    <input type="text" name="name" class="form-control" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label>Nomor Kontak / WhatsApp</label>
+                                    <input type="text" name="phone" class="form-control" id="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label>Provinsi, Kota, Kecamatan</label>
+                                    <input type="text" name="provinsi" class="form-control" id="provinsi">
+                                </div>
+                                <div class="form-group">
+                                    <label>Kode Pos</label>
+                                    <input type="number" name="kodepos" class="form-control" id="kodepos">
+                                </div>
+                                <div class="form-group">
+                                    <label>Alamat</label>
+                                    <textarea name="description" class="form-control" rows="3" id="description"
+                                        placeholder="Nama Jalan, Gedung, No Rumah"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Detail Lainnya</label>
+                                    <textarea name="detail" class="form-control" rows="3" id="detail"
+                                        placeholder="Blok/Unit No, Patokan"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Metode Pembayaran</label>
+                                    <select name="bayar" class="form-control" id="bayar">
+                                        <option value="COD"> COD </option>
+                                        <option value="Transfer Via Rekening BCA"> Transfer Via Rekening BCA</option>
+                                        <option value="Transfer Via Rekening BRI"> Transfer Via Rekening BRI</option>
+                                        <option value="DANA"> DANA</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn-dark send mb-4 mt-4">Pesan via WhatsApp</button>
+                                </div>
+
+                                <div id="text-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2 style="color: white;">ShoesId</h2>
+                </div>
+                <div class="col-6" style="display: flex;justify-content: right;">
+                    <div class="link">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="produk.html">Sneakers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="local.html">Diskon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="lokasi.html">Lokasi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mt-3">
+                    <h2>Sneakers</h2>
+                </div>
+                <div class="col-6" style="display: flex;justify-content: right; margin-top: 20px; margin-bottom: 20px;">
+                    <div class="keranjangblanja">
+                        <button type="button" class="btn btn-dark m-lg-2" data-bs-toggle="modal" data-bs-target="#cart">Cart
+                            (<span class="total-count"></span>)</button>
+                        <button class="clear-cart btn btn-secondary">ClearCart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-item">
+            <div class="grid-item">
+                <img src="sneakers/local (1).png" alt="">
+                <div class="detail">
+                    <h5>Ventela</h5>
+                    <h6>Ventela Public Low</h6>
+                    <p>
+                        <s>Rp 220.000</s> <br>
+                        Rp 199.000
+                    </p>
+                    <div class="button-order">
+                        <a href="#" data-name="Ventela (Ventela Public Low)" data-price="199000"
+                            class="add-to-cart btn btn-dark">Beli</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="sneakers/local (2).png" alt="">
+                <div class="detail">
+                    <h5>Ventela</h5>
+                    <h6>Ventela Public High</h6>
+                    <p>
+
+                        <s>275.000</s> <br>
+                        Rp 225.000
+                    </p>
+                    <div class="button-order">
+                        <a href="#" data-name="Ventela (Ventela Public High)" data-price="225000" class="add-to-cart btn btn-dark">Beli</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="sneakers/local (3).png" alt="">
+                <div class="detail">
+                    <h5>Ventela</h5>
+                    <h6>Ventela Public Cream Low</h6>
+                    <p>
+                        <s>Rp 250.000</s> <br>
+                        Rp 200.000
+                    </p>
+                    <div class="button-order">
+                        <a href="#" data-name="Ventela (Ventela Public Cream Low)" data-price="200000" class="add-to-cart btn btn-dark">Beli</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="sneakers/local (4).png" alt="">
+                <div class="detail">
+                    <h5>Aero Street</h5>
+                    <h6>Massive Low</h6>
+                    <p>
+                        <s>Rp 225.000</s> <br>
+                        Rp 150.000
+                    </p>
+                    <div class="button-order">
+                        <a href="#" data-name="Aero Street (Massive Low)" data-price="150000" class="add-to-cart btn btn-dark">Beli</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="sneakers/local (5).png" alt="">
+                <div class="detail">
+                    <h5>Aero Street</h5>
+                    <h6>Rose Putih Natural</h6>
+                    <p>
+                        <s>Rp 225.000</s> <br>
+                        Rp 150.000
+                    </p>
+                    <div class="button-order">
+                        <a href="#" data-name="Aero Street (Rose Putih Natural)" data-price="150000" class="add-to-cart btn btn-dark">Beli</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="sneakers/local (6).png" alt="">
+                <div class="detail">
+                    <h5>Aero Street</h5>
+                    <h6>Osaka Hitam</h6>
+                    <p>
+                        <s>Rp 225.000</s> <br>
+                        Rp 150.000
+                    </p>
+                    <div class="button-order">
+                        <a href="#" data-name="Aero Street (Osaka Hitam)" data-price="150000" class="add-to-cart btn btn-dark">Beli</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="sneakers/local (7).png" alt="">
+                <div class="detail">
+                    <h5>Aero Street</h5>
+                    <h6>Oscar Putih</h6>
+                    <p>
+                        <s>Rp 225.000</s> <br>
+                        Rp 150.000
+                    </p>
+                    <div class="button-order">
+                        <a href="#" data-name=" Aero Street (Oscar Putih)" data-price="150000"
+                            class="add-to-cart btn btn-dark">Beli</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="sneakers/local (8).png" alt="">
+                <div class="detail">
+                    <h5>Aero Street</h5>
+                    <h6>Volt Putih Neon</h6>
+                    <p>
+                        <s>Rp 250.000</s> <br>
+                        Rp 165.000
+                    </p>
+                    <div class="button-order">
+                        <a href="#" data-name="Aero Street (Volt Putih Neon)" data-price="165000"
+                            class="add-to-cart btn btn-dark">Beli</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="sneakers/local (9).png" alt="">
+                <div class="detail">
+                    <h5>Geoff Max</h5>
+                    <h6>Max Gavin Black</h6>
+                    <p>
+                        <s>Rp 240.000</s> <br>
+                        Rp 165.000
+                    </p>
+                    <div class="button-order">
+                        <a href="#" data-name="Geoff Max (Max Gavin Black)" data-price="165000"
+                            class="add-to-cart btn btn-dark">Beli</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="sneakers/local (10).png" alt="">
+                <div class="detail">
+                    <h5>Geoff Max</h5>
+                    <h6>Max Athletica AT 693 Grey</h6>
+                    <p>
+                        <s>Rp 240.000</s> <br>
+                        Rp 165.000
+                    </p>
+                    <div class="button-order">
+                        <a href="#" data-name="Geoff Max (Max Athletica AT 693 Grey)" data-price="165000"
+                            class="add-to-cart btn btn-dark">Beli</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="flex-container">
+            <div class="flex-item-left">
+                <h1>ShoesId</h1>
+                <p> Kami menyediakan pilihan sepatu untuk berbagai keperluan anda. Kami juga memiliki sistem pembayaran
+                    yang aman dan mudah,
+                    termasuk pembayaran online dan COD (cash on delivery). Kami mengutamakan pelayanan yang cepat dan
+                    tepat waktu
+                    dalam mengirimkan pesanan kepada pelanggan kami. Kami yakin bahwa pelanggan kami akan senang dengan
+                    pilihan
+                    sepatu yang kami tawarkan dan pelayanan yang kami berikan.
+            </div>
+            <div class="flex-item-center">
+                <h5>Temukan Kami</h5>
+                <a href=""><img class="lgfindme" src="/imghome/ytlogo.png" alt=""></a>
+                <a href=""><img class="lgfindme" src="/imghome/inslogo.png" alt=""></a>
+                <a href=""><img class="lgfindme" src="/imghome/ttlogo.png" alt="" style="width: 35px;"></a>
+                <a href=""><img class="lgfindme" src="/imghome/tiktoklogo.png" style="width: 25px;" alt=""></a>
+            </div>
+            <div class="flex-item-left">
+                <h5>Kontak</h5>
+                <br>Phone : +628135941959</br>
+                <br>Email : novendhimas@gmail.com</br>
+            </div>
+        </div>
+    </footer>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="javs.js"></script>
+</body>
+
+</html>

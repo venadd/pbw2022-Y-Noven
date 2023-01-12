@@ -1,0 +1,109 @@
+body {
+    max-width: min-content;
+    display: block;
+    margin: auto;
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+nav {
+    background-color: #2C3333;
+    padding: 10px;
+}
+a:hover{
+    transform: scale(1.1);
+}
+.nav-item {
+    margin-left: 30px;
+}
+
+.jumbotron {
+    background-color: #E7F6F2;
+    padding: 100px;
+}
+
+.brand {
+    text-align: center;
+    background-color: #E7F6F2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contentimg:hover{
+        opacity: 0.8;
+        -webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.logo {
+    border-radius: 100px;
+    margin: 20px;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+.container-item {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 30px;
+}
+
+.grid-item {
+
+    border: 1px solid rgba(181, 181, 181, 0.8);
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+}
+
+.unggul {
+    width: 225px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+    margin: auto;
+}
+
+.detail {
+    padding-left: 10px;
+}
+
+
+.unggulan {
+    width: 150px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+
+}
+footer {
+
+    background-color: #2C3333;
+  
+  }
+  
+  .flex-container {
+    padding: 100px;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    text-align: justify;
+  }
+  
+  /*footer*/
+  .flex-item-left {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-center {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .lgfindme {
+    display: inline;
+    width: 45px;
+  }
+  
+  .flex-item-right {
+    padding: 10px;
+    flex: 50%;
+  }
